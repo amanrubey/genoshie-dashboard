@@ -28,7 +28,7 @@ export default function Price() {
       <section className="bg-black min-h-screen ">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-300  via-teal-400 to-slate-100 hover:scale-125 transition-transform duration-300 ease-in-out" >Designed for business teams like yours.</h2>
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-300  via-teal-400 to-slate-100 md:hover:scale-125 transition-transform duration-300 ease-in-out" >Designed for business teams like yours.</h2>
             {/* <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> */}
           </div>
 
@@ -36,7 +36,7 @@ export default function Price() {
             {items.map((arr, ind) => {
               return (
                 /*Price Card */
-                <div key={ind} className="flex flex-col hover:scale-105 transition-transform duration-300 ease-in-out p-6 mx-auto max-w-lg bg-black text-center border hover:shadow-teal-400 border-gray-600 text-white rounded-lg shadow  xl:p-8 dark:text-white">
+                <div key={ind} className="flex flex-col md:hover:scale-105 transition-transform duration-300 ease-in-out p-6 mx-auto max-w-lg bg-black text-center border hover:shadow-teal-400 border-gray-600 text-white rounded-lg shadow  xl:p-8 dark:text-white">
 
                   {ind != 2 && <h3 className="mb-4 text-2xl md:p-2  font-semibold text-white">{item2[ind].name}</h3>}
                   {ind == 2 && <h3 className="mb-4 text-2xl  md:p-2 font-bold  bg-clip-text text-transparent bg-gradient-to-r from-blue-500  via-teal-400 to-white">{item2[ind].name}</h3>}
